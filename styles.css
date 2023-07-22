@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fuentes/OpenSans-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    src: url(../fuentes/OpenSans-SemiBold.ttf) format('truetype')
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* --primer-color:     #3FBA78; */
+    --primer-color:     #73949c;
+    --segundo-color:    #00CBDF;
+    --tercer-color:     #FF3C32;
+    --dark-color:       #282D31;
+    --texto-color:      #333333;
+    --body-bg:          #FFFFFF;
+
+    /* Titulos */
+    --titulo-grande:    32px;
+    --subtitulo:        24px;
+}
+
+body{
+    margin: 5;
+    padding: 5;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(120deg, #bbf8bb, #cc5acc);
+    height: 100vh;
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+div.container{
+    width: 300px;
+    height: 110px;
+    margin: 35px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.main{
+
+    width: 300px;
+    padding: 10px 50px 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: Arial;
+    float: left;
+    margin-top: 50px;
+    background: rgb(36, 35, 35);
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+/* ESTILOS PARA EL HEADER */
+.header-descripciones {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.contenidor-contacto {
+    background: var(--primer-color);
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    width: 100px;
+}
+
+.flex-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linea {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu__link {
+    text-decoration: none;
+    /* padding-left: 1rem; */
+    display: block;
+    padding: .5rem .7rem;
+    color: var(--dark-color);
+}
+
+.menu__link:hover {
+    background: var(--primer-color);
+    color: #FF3C32;
+    /* text-decoration: underline; */
+}
+ 
+.contenedor-slider {
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #FFF,
+                0 0 0 6px #EEE;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+
+
+
+/* ESTILOS PARA EL SLIDER */
+
+.slider {
+    display: flex;
+    width: 200%;
+    height: 300px;
+    margin-left: -100%;
+}
+
+.slider__seccion {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #444;
+    line-height: 37px;
+    cursor: pointer;
+    background: #FFF;
+}
+
+.slider__btn:hover {
+    background: var(--dark-color);
+    color: #FFF;
+}
+
+.slider__btn--left {
+    left: 10px;   
+}
+
+.slider__btn--right {
+    right: 10px;
+}
+ 
+
+
+
+/* ESTILOS PARA EL MAIN */
+
+main {
+    margin-bottom: 8rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: var(--titulo-grande);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+main .descripcion {
+    text-align: center;
+}
+
+.main-contenido {
+    margin-bottom: 3rem;
+}
+
+.main-galeria {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.5rem;
+}
+
+.galeria__item {
+    width: 32%;
+    height: 300px;
+}
+
+.galeria__img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: .25rem;
+    box-shadow: 0 0 0 0.3px #EEE;
+}
+
+.galeria__descripcion {
+    font-size: 15px;
+}
+
+
+
+/* ESTILOS PARA EL ASIDE */
+.contacto {
+    padding: 0 5rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociales div {
+    display: flex;
+}
+
+.redes-sociales img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin-left: 0.5rem;
+    border-radius: .25rem;
+}
+
+.contacto p strong {
+    color: var(--primer-color);
+}
+
+.contacto__titulo {
+    font-size: var(--subtitulo);
+    text-align: initial;
+}
+
+.horario__titulo{
+    font-size: var(--subtitulo);
+    text-align: initial;
+}
+
+
+/* Estilos para el segundo Banner */
+ #info {
+     background: var(--dark-color);
+     color: #28748F;
+     text-align: center;
+     padding: 5rem 2rem;
+ }
+ 
+#info .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.info-pet img {
+    width: 300px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #00ffff;
+}
+
+.info-pet {
+    margin-right: 1rem;
+} 
+
+.banner2__title {
+    margin-bottom: 2rem;
+}
+
+
+/* ESTILOS PARA EL FOOTER (Pie de pag) */
+
+.main-footer {
+    background: var(--dark-color);
+}
+
+.footer-contenido p {
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem 0;
+    color: #FFF;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contenido p span {
+    color: var(--tercer-color);
+}
+
+
+/* ESTILOS PARA LE FORMULARIO DE CONTACTO */
+form  {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form__titulo {
+    text-align: initial;
+    font-size: var(--subtitulo);
+}
+
+.campo, textarea {
+    width: 90%;
+    padding: 10px 5px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-family: "Open Sans";
+}
+
+.btn-enviar {
+    padding: .75rem 2rem;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    background: var(--primer-color);
+    color: #FFF;
+    border-radius: 3px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background: #28748F;
+}
